@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "typings/",
+    "esModuleInterop": true,
+    "incremental": true,
+    "module": "node16",
+    "outDir": "dist/",
+    "paths": {
+      "@modules/*": ["src/modules/*"],
+    },
+    "rootDir": "src/",
+    "strict": true,
+    "target": "ES2022",
+    "tsBuildInfoFile": "typings/tsconfig.tsbuildinfo",
+  },
+  "include": [
+    "src/"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}

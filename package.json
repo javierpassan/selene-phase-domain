@@ -1,0 +1,31 @@
+{
+  "name": "selene-phase-domain",
+  "version": "1.0.0-alpha.1",
+  "description": "Selene phase domain",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc --watch -p tsconfig.json",
+    "clean": "rm -rf dist/*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javierpassan/selene-phase-domain.git"
+  },
+  "author": "Javier Pastor Sánchez <javierpassan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javierpassan/selene-phase-domain/issues"
+  },
+  "homepage": "https://github.com/javierpassan/selene-phase-domain#readme",
+  "dependencies": {
+    "mongodb": "4.13.0",
+    "telegraf": "4.11.2"
+  },
+  "devDependencies": {
+    "tsc": "2.0.4",
+    "typescript": "4.9.4"
+  },
+  "types": "typings/index.d.ts"
+}

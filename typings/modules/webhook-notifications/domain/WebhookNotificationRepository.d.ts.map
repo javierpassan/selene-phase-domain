@@ -1,0 +1,1 @@
+{"version":3,"file":"WebhookNotificationRepository.d.ts","sourceRoot":"","sources":["../../../../src/modules/webhook-notifications/domain/WebhookNotificationRepository.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,sBAAsB,EAAE,MAAM,0BAA0B,CAAC;AAElE,MAAM,WAAW,6BAA6B;IAC5C,yBAAyB,CAAC,eAAe,EAAE,sBAAsB,GAAG,OAAO,CAAC,GAAG,CAAC,CAAC;CAClF"}
