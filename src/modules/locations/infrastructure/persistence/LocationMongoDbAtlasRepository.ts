@@ -1,6 +1,6 @@
 import { Collection } from 'mongodb';
 
-import { BaseMongoDbAtlasRepository } from '@modules/shared/infrastructure/persistence/BaseMongoDbAtlasRepository';
+import { BaseMongoDbAtlasRepository } from '../../../shared/infrastructure/persistence/BaseMongoDbAtlasRepository';
 
 import { LocationDto } from '../../domain/LocationDto';
 import { LocationRepository } from '../../domain/LocationRepository';

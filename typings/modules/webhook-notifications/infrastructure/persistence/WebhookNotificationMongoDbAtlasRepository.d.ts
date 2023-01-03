@@ -1,5 +1,5 @@
 import { Collection } from 'mongodb';
-import { BaseMongoDbAtlasRepository } from '@modules/shared/infrastructure/persistence/BaseMongoDbAtlasRepository';
+import { BaseMongoDbAtlasRepository } from '../../../shared/infrastructure/persistence/BaseMongoDbAtlasRepository';
 import { WebhookNotificationDto } from '../../domain/WebhookNotificationDto';
 import { WebhookNotificationRepository } from '../../domain/WebhookNotificationRepository';
 export declare class WebhookNotificationMongoDbAtlasRepository extends BaseMongoDbAtlasRepository implements WebhookNotificationRepository {
