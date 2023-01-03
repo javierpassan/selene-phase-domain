@@ -1,0 +1,1 @@
+{"version":3,"file":"WebhookNotification.d.ts","sourceRoot":"","sources":["../../../../src/modules/webhook-notifications/domain/WebhookNotification.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,mBAAmB;IAClC,IAAI,EAAE,GAAG,CAAC;IACV,SAAS,EAAE,IAAI,CAAC;IAChB,QAAQ,EAAE,MAAM,CAAC;CAClB"}

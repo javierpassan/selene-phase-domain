@@ -1,0 +1,1 @@
+{"version":3,"file":"Location.d.ts","sourceRoot":"","sources":["../../../../src/modules/locations/domain/Location.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,QAAQ;IACvB,MAAM,EAAE,MAAM,CAAC;IACf,SAAS,EAAE,IAAI,CAAC;IAChB,QAAQ,EAAE,MAAM,CAAC;IACjB,SAAS,EAAE,MAAM,CAAC;CACnB"}
