@@ -1,4 +1,4 @@
-import { Collection } from 'mongodb';
+import { Collection, ObjectId, } from 'mongodb';
 
 import { BaseMongoDbAtlasRepository } from '../../../shared/infrastructure/persistence/BaseMongoDbAtlasRepository';
 
@@ -22,6 +22,32 @@ export class LocationMongoDbAtlasRepository extends BaseMongoDbAtlasRepository i
       latitude,
       longitude,
     });
+  }
+
+  createLocationIterator() {
+    const iteratorContext = this.context;
+    return async function* () {
+      const documents = await iteratorContext
+        .aggregate([
+          {
+            '$sort': {
+              '_id': -1,
+            }
+          },
+          { 
+            '$group': {
+              '_id': '$chatId',
+              'latitude': { '$first': '$latitude', },
+              'longitude': { '$first': '$longitude', },
+            }
+          }
+        ])
+        .toArray();
+
+      for (const document of documents) {
+        yield document;
+      }
+    };
   }
 
   async readLastLocationByChatId(chatId: number) {
