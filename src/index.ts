@@ -4,5 +4,7 @@ export { TelegramTelegrafBot } from './modules/bot';
 export { LocationRepository } from './modules/locations';
 export { LocationMongoDbAtlasRepository } from './modules/locations';
 
+export { MoonService } from './modules/moon-phases';
+
 export { WebhookNotificationRepository } from './modules/webhook-notifications';
 export { WebhookNotificationMongoDbAtlasRepository } from './modules/webhook-notifications';
