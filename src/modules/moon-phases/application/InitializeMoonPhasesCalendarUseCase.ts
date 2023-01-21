@@ -1,9 +1,9 @@
 import * as _ from 'lodash';
 import dayjs from 'dayjs';
 
-import { UseCase } from "../../shared/application/UseCase";
+import { UseCase } from '../../shared/application/UseCase';
 
-import { MOON_PHASES, MoonService } from "../index";
+import { MOON_PHASES, MoonService } from '../index';
 import { MoonPhaseEventRepository } from '../domain/MoonPhaseEventRepository';
 
 const print = console.log;
