@@ -1,3 +1,4 @@
+export { SendMoonPhaseMessagesUseCase } from './application/SendMoonPhaseMessagesUseCase';
 export { MOON_PHASES, MoonPhase } from './domain/MoonPhases';
 export { MoonPhaseEventRepository } from './domain/MoonPhaseEventRepository';
 export { MoonService } from './domain/MoonService';

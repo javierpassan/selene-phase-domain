@@ -3,6 +3,7 @@ export { TelegramBot } from './modules/bot';
 export { TelegramTelegrafBot } from './modules/bot';
 export { LocationRepository } from './modules/locations';
 export { LocationMongoDbAtlasRepository } from './modules/locations';
+export { SendMoonPhaseMessagesUseCase } from './modules/moon-phases';
 export { MOON_PHASES, MoonPhase } from './modules/moon-phases';
 export { MoonPhaseEventRepository } from './modules/moon-phases';
 export { MoonService } from './modules/moon-phases';
