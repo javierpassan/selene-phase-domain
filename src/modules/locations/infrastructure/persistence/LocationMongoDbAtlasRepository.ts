@@ -37,6 +37,7 @@ export class LocationMongoDbAtlasRepository extends BaseMongoDbAtlasRepository i
           { 
             '$group': {
               '_id': '$chatId',
+              'chatId': { '$first': '$chatId', },
               'latitude': { '$first': '$latitude', },
               'longitude': { '$first': '$longitude', },
             }
