@@ -1,6 +1,6 @@
 import { UseCase } from "../../shared/application/UseCase";
 
-import { WebhookNotificationRepository } from "../domain/WebhookNotificationRepository";
+import { WebhookNotificationRepository } from "../../webhook-notifications/domain/WebhookNotificationRepository";
 
 export class HandleTelegramUpdateUseCase implements UseCase {
   constructor(
