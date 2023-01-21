@@ -1,6 +1,6 @@
 import { Collection } from "mongodb";
-import { BaseMongoDbAtlasRepository } from "@modules/shared/infrastructure/persistence/BaseMongoDbAtlasRepository";
-import { MoonPhaseEventRepository } from "../domain/MoonPhaseEventRepository";
+import { BaseMongoDbAtlasRepository } from "../../../shared/infrastructure/persistence/BaseMongoDbAtlasRepository";
+import { MoonPhaseEventRepository } from "../../domain/MoonPhaseEventRepository";
 export declare class MoonPhaseEventMongoDbAtlasRepository extends BaseMongoDbAtlasRepository implements MoonPhaseEventRepository {
     constructor(context: Collection);
     createMoonPhaseEvent(moonPhaseEvent: any): Promise<any>;
