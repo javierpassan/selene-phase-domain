@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "declaration": true,
     "declarationMap": true,
@@ -10,6 +11,7 @@
     "module": "node16",
     "outDir": "dist/",
     "paths": {
+      "@commands/*": ["src/commands/*"],
       "@modules/*": ["src/modules/*"],
     },
     "rootDir": "src/",

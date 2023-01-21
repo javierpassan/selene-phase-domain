@@ -1,7 +1,7 @@
 import { Markup, Telegraf } from 'telegraf';
 import { message } from 'telegraf/filters';
 
-import { LocationRepository } from '@modules/locations/domain/LocationRepository';
+import { LocationRepository } from '../../locations/domain/LocationRepository';
 
 import { TelegramBot } from '../domain/TelegramBot';
 
@@ -9,9 +9,10 @@ export class TelegramTelegrafBot implements TelegramBot {
 
   constructor(
     private bot: Telegraf,
-    private logger: any,
-    private locationRepository: LocationRepository
+    private locationRepository: LocationRepository,
+    private logger: any
   ) {
+    
   }
 
   async setup(): Promise<void> {

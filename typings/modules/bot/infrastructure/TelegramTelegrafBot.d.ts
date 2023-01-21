@@ -1,11 +1,11 @@
 import { Telegraf } from 'telegraf';
-import { LocationRepository } from '@modules/locations/domain/LocationRepository';
+import { LocationRepository } from '../../locations/domain/LocationRepository';
 import { TelegramBot } from '../domain/TelegramBot';
 export declare class TelegramTelegrafBot implements TelegramBot {
     private bot;
-    private logger;
     private locationRepository;
-    constructor(bot: Telegraf, logger: any, locationRepository: LocationRepository);
+    private logger;
+    constructor(bot: Telegraf, locationRepository: LocationRepository, logger: any);
     setup(): Promise<void>;
 }
 //# sourceMappingURL=TelegramTelegrafBot.d.ts.map
