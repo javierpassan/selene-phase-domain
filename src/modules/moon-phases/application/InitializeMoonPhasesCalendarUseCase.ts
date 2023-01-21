@@ -60,7 +60,7 @@ export class InitializeMoonPhasesCalendarUseCase implements UseCase {
       print(`"${element.date.toISOString()}","${element.details!.moonPhase!.emoji}","${element.details!.index}"`);
       this.moonPhaseEventRepository.createMoonPhaseEvent({
         name: element.details!.moonPhase!.name,
-        occurredOn: element.date,
+        occurredOn: element.date.toDate(),
       })
     });
   }
