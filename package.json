@@ -1,6 +1,6 @@
 {
   "name": "selene-phase-domain",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "Selene phase domain",
   "main": "dist/index.js",
   "scripts": {
