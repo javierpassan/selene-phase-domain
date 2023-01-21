@@ -1,4 +1,3 @@
-import { Document } from 'mongodb';
 import { LocationDto } from './LocationDto';
 
 export interface LocationRepository {
