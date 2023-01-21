@@ -1,9 +1,9 @@
 import { Collection } from "mongodb";
 import dayjs from 'dayjs';
 
-import { BaseMongoDbAtlasRepository } from "@modules/shared/infrastructure/persistence/BaseMongoDbAtlasRepository";
+import { BaseMongoDbAtlasRepository } from "../../../shared/infrastructure/persistence/BaseMongoDbAtlasRepository";
 
-import { MoonPhaseEventRepository } from "../domain/MoonPhaseEventRepository";
+import { MoonPhaseEventRepository } from "../../domain/MoonPhaseEventRepository";
 
 export class MoonPhaseEventMongoDbAtlasRepository extends BaseMongoDbAtlasRepository implements MoonPhaseEventRepository {
   constructor(context: Collection) {
