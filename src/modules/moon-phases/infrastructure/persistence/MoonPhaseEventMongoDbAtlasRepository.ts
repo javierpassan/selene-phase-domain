@@ -25,7 +25,7 @@ export class MoonPhaseEventMongoDbAtlasRepository extends BaseMongoDbAtlasReposi
     const dateStarOfDay = dayjs(date).startOf('day');
     const dateEndOfDay = dayjs(date).endOf('day');
     const query = {
-      occuredOn: {
+      occurredOn: {
         '$gte': dateStarOfDay.toDate(),
         '$lte': dateEndOfDay.toDate(),
       }
