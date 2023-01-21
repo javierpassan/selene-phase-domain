@@ -13,11 +13,11 @@ export class MoonPhaseEventMongoDbAtlasRepository extends BaseMongoDbAtlasReposi
   async createMoonPhaseEvent(moonPhaseEvent: any): Promise<any> {
     const {
       name,
-      occuredOn,
+      occurredOn,
     } = moonPhaseEvent;
     return this.context.insertOne({
       name,
-      occuredOn,
+      occurredOn,
     });
   }
   

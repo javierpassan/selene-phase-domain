@@ -56,13 +56,13 @@ export class InitializeMoonPhasesCalendarUseCase implements UseCase {
       }
     }
 
-    calendar.forEach(element => {
+    for (const element of calendar) {
       print(`"${element.date.toISOString()}","${element.details!.moonPhase!.emoji}","${element.details!.index}"`);
-      this.moonPhaseEventRepository.createMoonPhaseEvent({
+      await this.moonPhaseEventRepository.createMoonPhaseEvent({
         name: element.details!.moonPhase!.name,
         occurredOn: element.date.toDate(),
-      })
-    });
+      });
+    }
   }
 
   private getMoonPhaseDetails(fraction: number, phase: number, now: dayjs.Dayjs) {
